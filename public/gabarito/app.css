@@ -1,0 +1,142 @@
+/* ===== Reset + base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #111827;
+}
+
+header,
+footer {
+    background: #004d7a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px 15px;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+img {
+    max-width: 200px;
+}
+
+/* ===== 1) Aside à esquerda ===== */
+
+.controles>* {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 8px auto;
+}
+
+input[type="text"],
+select {
+    padding: 10px 12px;
+    border: 1px solid #004d7a;
+    /* mesma cor da borda */
+    border-radius: 8px;
+    outline: none;
+    color: #004d7a;
+    /* cor do texto */
+    background: #e6f4ff;
+    /* cor de fundo */
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #004d7a;
+    box-shadow: 0 0 0 3px rgba(0, 77, 122, 0.25);
+}
+
+
+.btn {
+    background: #004d7a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0066a2;
+}
+
+/* ===== 2) Section de conteúdo ===== */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-grow: 1;
+}
+
+/* UL com exemplos de seletores */
+.demo {}
+
+.demo li.item {}
+
+.demo li.selected {}
+
+.demo #unico {}
+
+.demo li[data-type="attr"] {}
+
+.demo li:first-child {}
+
+.demo li:last-child {}
+
+.demo li:not(.ex) {}
+
+.demo:has(.selected) {}
+
+/* ===== 3) Cards ===== */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.cards article {
+    flex: 1 1 260px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.cards h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.cards h4 {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.cards div {
+    font-size: 14px;
+    color: #334155;
+}
+
+/* Responsividade Cards */

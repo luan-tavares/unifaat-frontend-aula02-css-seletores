@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aula 02 — CSS, Seletores e Responsividade</title>
+  <link rel="stylesheet" href="./app.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Aula 02 — CSS, Seletores e Responsividade</h1>
+  </header>
+
+  <main>
+
+
+    <!-- Conteúdo principal em uma única section -->
+    <section class="content">
+      <h2>Conteúdo</h2>
+
+      <!-- UL com exemplos de seletores -->
+      <ul class="demo">
+        <li class="item">.class → este tem a classe <code>Exemplo code</code></li>
+        <li id="unico" class="item">#id → este é o <code>#unico</code></li>
+        <li class="item" data-type="attr">[attr] → tem <code>data-type=\"attr\"</code></li>
+        <li class="item">:first-child → estilizado no primeiro <code>li</code></li>
+        <li class="item">:last-child → estilizado no último <code>li</code></li>
+        <li class="item">:not(.ex) → aplica em todos que <strong>não</strong> têm <code>.ex</code></li>
+        <li class="item selected">:has() → o <code>ul</code> muda quando tem um <code>.selected</code></li>
+      </ul>
+
+      <!-- Cards em flex -->
+      <div class="cards">
+        <article>
+          <h3>Nome</h3>
+          <h4>Área</h4>
+        </article>
+        <!-- JS -->
+      </div>
+    </section>
+    <aside>
+      <img src="../img/squirtle.png" alt="Squirtle" />
+      <div class="controles">
+        <input type="text" placeholder="Digite um curso..." />
+        <select id="area">
+          <option value="">Selecione a área...</option>
+          <option value="Humanas">Humanas</option>
+          <option value="Biológicas">Biológicas</option>
+          <option value="Exatas">Exatas</option>
+        </select>
+        <button class="btn" type="button">Adicionar</button>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div>Frontend 2025.2</div>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>
