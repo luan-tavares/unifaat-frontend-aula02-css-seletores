@@ -1,4 +1,4 @@
-# Unifaat :: Frontend :: Aula 01 - Servidor de arquivos estáticos e Introdução a HTML e DOM <a name="unifaat-frontend-aula02-css-seletores"></a>
+# Unifaat :: Frontend :: Aula 02 - CSS, Seletores e Responsividade <a name="unifaat-frontend-aula02-css-seletores"></a>
 
 ## 📑 Sumário
 1. [Instalação e Execução](#instalacao-e-execucao)  
@@ -15,30 +15,16 @@
 1. Clonar o repositório:
 
    ```sh
-   git clone https://github.com/luan-tavares/unifaat-frontend-aula01-server-html-jsdom
+   git clone https://github.com/luan-tavares/unifaat-frontend-aula02-css-seletores
    ```
 
 2. Entrar na pasta do projeto:
 
    ```sh
-   cd unifaat-frontend-aula01-server-html-jsdom
+   cd unifaat-frontend-aula02-css-seletores
    ```
 
-3. Criar o arquivo `.env` na raiz do projeto copiando o `.env.example`:
-
-   > No Windows:
-
-   ```sh
-   copy .env.example .env
-   ```
-
-   > No Linux:
-
-   ```sh
-   cp .env.example .env
-   ```
-
-4. Subir a aplicação com Docker Compose:
+3. Subir a aplicação com Docker Compose:
 
    > Docker Compose tradicional:
 
@@ -66,9 +52,6 @@
 |----------------------|---------------------------------------------------------------------------|
 | `docker/`            | Dockerfiles específicos para cada serviço da aplicação.                   |
 | `public/`            | Arquivos públicos (como `index.html`) servidos diretamente por HTTP.     |
-| `.env`               | Variáveis de ambiente sensíveis carregadas em tempo de execução.          |
-| `.env.example`       | Template de `.env` para novos devs copiarem e configurarem.               |
-| `.gitignore`         | Lista de arquivos e pastas que o Git deve ignorar.                        |
 | `docker-compose.yml` | Orquestração dos containers do projeto.                                   |
 | `readme.md`          | Documentação principal do projeto (este arquivo).                         |
 
