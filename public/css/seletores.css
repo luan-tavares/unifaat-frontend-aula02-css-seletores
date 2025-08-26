@@ -1,5 +1,12 @@
-/* UL com exemplos de seletores */
-.demo {}
+.content ul.demo {
+    list-style: none;
+}
+
+.content .demo li {
+    padding: 8px;
+    margin-bottom: 3px;
+    background-color: #f0f0f0;
+}
 
 .demo li.item {}
 
