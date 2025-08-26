@@ -17,31 +17,6 @@
 
     <main>
 
-
-        <!-- Conteúdo principal em uma única section -->
-        <section class="content">
-            <h2>Conteúdo</h2>
-
-            <!-- UL com exemplos de seletores -->
-            <ul class="demo">
-                <li class="item">.class → este tem a classe <code>Exemplo code</code></li>
-                <li id="unico" class="item">#id → este é o <code>#unico</code></li>
-                <li class="item" data-type="attr">[attr] → tem <code>data-type=\"attr\"</code></li>
-                <li class="item">:first-child → estilizado no primeiro <code>li</code></li>
-                <li class="item">:last-child → estilizado no último <code>li</code></li>
-                <li class="item">:not(.ex) → aplica em todos que <strong>não</strong> têm <code>.ex</code></li>
-                <li class="item selected">:has() → o <code>ul</code> muda quando tem um <code>.selected</code></li>
-            </ul>
-
-            <!-- Cards em flex -->
-            <div class="cards">
-                <article>
-                    <h3>Nome</h3>
-                    <h4>Área</h4>
-                </article>
-                <!-- JS -->
-            </div>
-        </section>
         <aside>
             <img src="../img/squirtle.png" alt="Squirtle" />
             <div class="controles">
@@ -55,6 +30,49 @@
                 <button class="btn" type="button">Adicionar</button>
             </div>
         </aside>
+
+
+        <!-- Conteúdo principal em uma única section -->
+        <section class="content">
+            <h2>Conteúdo</h2>
+
+            <!-- UL com exemplos de seletores -->
+            <ul class="demo">
+
+                <li class="item">
+                    :first-child → este é o <code>primeiro li</code> da lista
+                </li>
+                <li class="item">
+                    .class → este tem a classe <code>.exemplo</code>
+                </li>
+                <li id="unico" class="item">
+                    #id → este é o <code>#unico</code>
+                </li>
+                <li class="item" data-type="attr">
+                    [attr] → este tem o atributo <code>data-type="attr"</code>
+                </li>
+                <li class="item">
+                    :not(.ex) → este é aplicado em todos que <strong>não</strong> têm a classe <code>.ex</code>
+                </li>
+                <li class="item selected">
+                    :has(.selected) → o <code>ul</code> muda quando contém um <code>li.selected</code>
+                </li>
+                <li class="item">
+                    :last-child → este é o <code>último li</code> da lista
+                </li>
+
+            </ul>
+
+            <!-- Cards em flex -->
+            <div class="cards">
+                <article>
+                    <h3>Nome</h3>
+                    <h4>Área</h4>
+                </article>
+                <!-- JS -->
+            </div>
+        </section>
+
     </main>
 
     <footer>
