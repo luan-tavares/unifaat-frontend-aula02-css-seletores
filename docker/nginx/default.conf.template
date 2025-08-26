@@ -1,13 +1,14 @@
 server {
     
-    listen 80;
+    listen 80;                          # Escuta conexões HTTP na porta 80 (padrão HTTP)
 
-    root /var/www;
-    index index.html;
+    root /var/www;                      # Diretório raiz onde estão os arquivos ESTÁTICOS do site
+    index index.html;                   # Arquivo padrão servido quando não é especificado na URL
 
-    location / {
-        autoindex on;
-        try_files $uri $uri/ =404;
+    location / {                        # Bloco de configuração para a rota "/"
+        autoindex on;                   # Ativa listagem automática de diretórios (útil em dev, perigoso em produção)
+        try_files $uri $uri/ =404;      # Tenta servir o arquivo requisitado ($uri), depois a pasta ($uri/).
+                                        # Se nada for encontrado, retorna erro 404.
     }
 
 }

@@ -1,0 +1,33 @@
+.cards article {
+    /* Cresce, encolhe e largura mínima ↓ */
+    flex: 1 1 260px;
+    /* Borda cinza clara ↓ */
+    border: 1px solid #e5e7eb;
+    /* Cantos arredondados ↓ */
+    border-radius: 12px;
+    /* Espaçamento interno ↓ */
+    padding: 16px;
+}
+
+.cards h3 {
+    /* Tamanho da fonte ↓ */
+    font-size: 18px;
+    /* Espaço inferior ↓ */
+    margin-bottom: 4px;
+}
+
+.cards h4 {
+    /* Fonte menor ↓ */
+    font-size: 14px;
+    /* Cor de destaque ↓ */
+    color: #64748b;
+    /* Espaço inferior ↓ */
+    margin-bottom: 8px;
+}
+
+.cards div {
+    /* Texto menor ↓ */
+    font-size: 14px;
+    /* Cor cinza escura ↓ */
+    color: #334155;
+}
