@@ -1,3 +1,14 @@
+.cards {
+    /* Layout em linha flexível ↓ */
+    display: flex;
+    /* Quebra linha se faltar espaço ↓ */
+    flex-wrap: wrap;
+    /* Espaçamento entre cards ↓ */
+    gap: 16px;
+    /* Alinha na horizontal no centro ↓ */
+    justify-content: center;
+}
+
 .cards article {
     /* Cresce, encolhe e largura mínima ↓ */
     flex: 1 1 260px;
@@ -7,6 +18,11 @@
     border-radius: 12px;
     /* Espaçamento interno ↓ */
     padding: 16px;
+}
+
+.cards article.selecionado {
+    border: 1px solid #000000;
+    background-color: #CCCCCC;
 }
 
 .cards h3 {
